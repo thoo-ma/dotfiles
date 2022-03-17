@@ -101,9 +101,11 @@ tmap <silent> <A-Right> <C-w>:wincmd l<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 augroup AutoSaveFolds
-    autocmd!
-    autocmd BufWinLeave * mkview
-    autocmd BufWinEnter * silent! loadview
+    if (bufname())
+        autocmd!
+        autocmd BufWinLeave * mkview
+        autocmd BufWinEnter * silent! loadview
+    endif
 augroup END
 
 " click to open/close fold
