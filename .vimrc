@@ -76,7 +76,10 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
-set expandtab
+
+if (&filetype != 'make') " make love tabs
+    set expandtab
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Terminal                                                                     "
