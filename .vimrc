@@ -10,6 +10,7 @@ set splitbelow " Default is to split above
 set wildmenu
 set autochdir
 set backspace=indent,eol,start
+set shortmess=s
 
 if !has('nvim') " Enabled by default into neovim
     set ttymouse=xterm2 "Enable to resize vim panes with mouse inside tmux session
