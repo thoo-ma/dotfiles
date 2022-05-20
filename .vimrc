@@ -15,7 +15,7 @@ set cursorline
 set cursorlineopt=number
 
 if !has('nvim') " Enabled by default into neovim
-    set ttymouse=xterm2 "Enable to resize vim panes with mouse inside tmux session
+    if has('mouse_sgr') | set ttymouse=sgr | else | set ttymouse=xterm2 | endif
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
