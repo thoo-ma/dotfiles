@@ -24,7 +24,6 @@ endif
 
 call plug#begin()
     Plug 'sainnhe/gruvbox-material'
-    Plug 'ayu-theme/ayu-vim'
     Plug 'junegunn/goyo.vim'
     Plug 'preservim/nerdtree'
     Plug 'TovarishFin/vim-solidity'
@@ -38,7 +37,7 @@ call plug#begin()
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Colorschemes                                                                 "
+" Colorscheme                                                                  "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if has('termguicolors')
@@ -47,14 +46,11 @@ endif
 
 set background=dark
 
-" Ayu
-let g:ayucolor="mirage" " light|mirage|dark
-
 " Gruvbox-material
 let g:gruvbox_material_background = 'medium' " soft|medium|hard
 let g:gruvbox_material_palette = 'material' " material|mix|original
 
-colorscheme gruvbox-material " ayu|gruvbox-material
+colorscheme gruvbox-material
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Search                                                                       "
