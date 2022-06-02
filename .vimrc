@@ -40,15 +40,12 @@ call plug#end()
 " Colorscheme                                                                  "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if has('termguicolors')
-    set termguicolors
-endif
+if has('termguicolors') | set termguicolors | endif
 
 set background=dark
 
-" Gruvbox-material
-let g:gruvbox_material_background = 'medium' " soft|medium|hard
-let g:gruvbox_material_palette = 'material' " material|mix|original
+let g:gruvbox_material_background='hard' " soft|medium|hard
+let g:gruvbox_material_palette='material' " material|mix|original
 
 colorscheme gruvbox-material
 
@@ -77,23 +74,11 @@ set softtabstop=4
 set autoindent
 set smartindent
 
-if (&filetype != 'make') " make love tabs
-    set expandtab
-endif
+if (&filetype != 'make') | set expandtab | endif " make love tabs
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Terminal                                                                     "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Open terminal below all splits
-" cf. :help :botright
-":ab term botright term
-":cabbrev silent execute term botright term
-
-" Open terminal in vertical split
-"command! Vterm vert term
-":cabbrev silent execute vterm Vterm
-":cabbrev silent execute vterm vert term
 
 tmap <silent> <A-Left>  <C-w>:wincmd h<CR>
 tmap <silent> <A-Down>  <C-w>:wincmd j<CR>
