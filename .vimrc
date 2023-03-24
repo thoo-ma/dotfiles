@@ -154,6 +154,20 @@ nmap <silent> gr <Plug>(coc-references)
 :cabbrev xclip w !xclip -selection clipboard
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Spell                                                                        "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+highlight clear SpellBad
+highlight clear SpellCap
+highlight clear SpellRare
+highlight clear SpellLocal
+
+highlight SpellBad   cterm=underline ctermfg=red
+highlight SpellCap   cterm=underline ctermfg=lightblue
+highlight SpellRare  cterm=underline ctermfg=lightgreen
+highlight SpellLocal cterm=underline ctermfg=lightyellow
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Windows                                                                      "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
