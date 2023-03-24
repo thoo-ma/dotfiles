@@ -61,8 +61,8 @@ nnoremap <C-l> :nohlsearch<CR><C-l>
 " Highlight (cf. https://vim.fandom.com/wiki/Highlight_unwanted_spaces)        "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-:highlight ExtraWhitespace ctermbg=red guibg=red
-:match ExtraWhitespace /\s\+$/
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indentation                                                                  "
